@@ -27,9 +27,7 @@ export default {
     argv: () => process.argv,
     cwd: process.cwd,
     execPath: () => process.execPath,
-    exit: () => {
-      process.exit()
-    },
+    exit: process.exit,
     nextTick: process.nextTick,
     stdColumns: typeof process.stdout.columns !== 'undefined' ? process.stdout.columns : null
   },
